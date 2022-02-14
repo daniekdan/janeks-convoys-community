@@ -5,7 +5,7 @@ import { faRoute, faCalendar, faCircleInfo, faFlagCheckered, faClock, faCircleEx
 export default class Convoy extends Component {
   render() {
     return <div id='event' className='convoyInfo'>
-      <h2>Event info</h2>
+      <h2>Event Info</h2>
 
       <div className='convoyContainer'>
         <div className='cInformations'>
@@ -41,7 +41,7 @@ export default class Convoy extends Component {
           <div>
             <FontAwesomeIcon icon={faServer} />
             <span>Server: </span>
-            <span>Event server</span>
+            <span>Event Server</span>
           </div>
           <div>
             <FontAwesomeIcon icon={faCircleExclamation} />

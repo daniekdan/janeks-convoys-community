@@ -18,7 +18,7 @@ export default class Disclaimer extends Component {
   render() {
     return (
       <div style={divStyle}>
-          <b>THIS IS A TEST BUILD! </b>&nbsp;This is not representing a final product and several thing could and will change.
+          <b>THIS IS A TEST BUILD! </b>&nbsp;This is not representing a final product and several things could and will change.
       </div>
     )
   }

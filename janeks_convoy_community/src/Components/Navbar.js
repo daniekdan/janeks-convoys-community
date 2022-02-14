@@ -25,8 +25,8 @@ export default class Navbar extends Component {
         <img src={logo} alt="Janek's Convoys Community" />
         <div>
             <AnchorLink href="#about">About</AnchorLink>
-            <AnchorLink offset='120' href="#event">Next event info</AnchorLink>
-            <AnchorLink offset='120' href="#team">Meet the team</AnchorLink>
+            <AnchorLink offset='120' href="#event">Next Event Info</AnchorLink>
+            <AnchorLink offset='120' href="#team">Meet the Team</AnchorLink>
             <AnchorLink href="#join">Join us!</AnchorLink>
         </div>
         </div>
