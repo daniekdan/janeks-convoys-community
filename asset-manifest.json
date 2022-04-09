@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/janeks-convoys-community/static/css/main.fb80cbc6.css",
-    "main.js": "/janeks-convoys-community/static/js/main.c2f142df.js",
+    "main.js": "/janeks-convoys-community/static/js/main.0a41e1f9.js",
     "static/js/787.559d49cb.chunk.js": "/janeks-convoys-community/static/js/787.559d49cb.chunk.js",
     "static/media/trucks1.png": "/janeks-convoys-community/static/media/trucks1.6b310173aa79a8d9b429.png",
     "static/media/trucks2.png": "/janeks-convoys-community/static/media/trucks2.bd360f992cadf66c4a80.png",
     "static/media/jcc-logo.png": "/janeks-convoys-community/static/media/jcc-logo.1406fb6bdb8561dafac3.png",
     "index.html": "/janeks-convoys-community/index.html",
     "main.fb80cbc6.css.map": "/janeks-convoys-community/static/css/main.fb80cbc6.css.map",
-    "main.c2f142df.js.map": "/janeks-convoys-community/static/js/main.c2f142df.js.map",
+    "main.0a41e1f9.js.map": "/janeks-convoys-community/static/js/main.0a41e1f9.js.map",
     "787.559d49cb.chunk.js.map": "/janeks-convoys-community/static/js/787.559d49cb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb80cbc6.css",
-    "static/js/main.c2f142df.js"
+    "static/js/main.0a41e1f9.js"
   ]
 }
