@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import TeamList from "./TeamList";
+import Fetch from "../core/Fetch";
 
-export default class Team extends Component {
+export default class Team extends Component {  
+
   render() {
     return <div className='team' id='team'>
-        <h2>Meet the team</h2>
-        <div>
-            <TeamList />
-        </div>
+        <h2>Meet the Team</h2>
+        <Fetch />
     </div>;
   }
 }

@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import { HashLink } from 'react-router-hash-link';
 import logo from '../images/jcc-logo.png';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Disclaimer from './Disclaimer'
+
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -80; 
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
 
 export default class Navbar extends Component {
 
@@ -20,14 +25,14 @@ export default class Navbar extends Component {
     };
 
   render() {
-    return <div><Disclaimer />
-    <div className='navbar' style={{ paddingTop: '40px' }}>
+    return <div>
+    <div className='navbar'>
         <img src={logo} alt="Janek's Convoys Community" />
         <div>
-            <AnchorLink href="#about">About</AnchorLink>
-            <AnchorLink offset='120' href="#event">Next Event Info</AnchorLink>
-            <AnchorLink offset='120' href="#team">Meet the Team</AnchorLink>
-            <AnchorLink href="#join">Join us!</AnchorLink>
+        <HashLink smooth to="/#about" scroll={scrollWithOffset}>About</HashLink>
+        <HashLink smooth to="/#event" scroll={scrollWithOffset}>Next Event Info</HashLink>
+        <HashLink smooth to="/#team" scroll={scrollWithOffset}>Meet the Team</HashLink>
+        <HashLink to="/join-us#">Join us!</HashLink>
         </div>
         </div>
     </div>;
