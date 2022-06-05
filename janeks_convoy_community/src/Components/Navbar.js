@@ -33,6 +33,11 @@ export default class Navbar extends Component {
         <HashLink smooth to="/#event" scroll={scrollWithOffset}>Next Event Info</HashLink>
         <HashLink smooth to="/#team" scroll={scrollWithOffset}>Meet the Team</HashLink>
         <HashLink to="/join-us#">Join us!</HashLink>
+        {/* Support for GH Pages */}
+        {/* <HashLink smooth to="/janeks-convoys-community/#about" scroll={scrollWithOffset}>About</HashLink>
+        <HashLink smooth to="/janeks-convoys-community/#event" scroll={scrollWithOffset}>Next Event Info</HashLink>
+        <HashLink smooth to="/janeks-convoys-community/#team" scroll={scrollWithOffset}>Meet the Team</HashLink>
+        <HashLink to="/janeks-convoys-community/join-us#">Join us!</HashLink> */}
         </div>
         </div>
     </div>;

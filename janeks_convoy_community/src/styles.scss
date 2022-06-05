@@ -249,8 +249,12 @@ a:visited {
       font-weight: 300;
       text-align: center;
       padding: 32px;
-      a:hover {
+      a:hover,
+      .disbld:hover {
         text-decoration: underline;
+      }
+      .disbld {
+        cursor: not-allowed;
       }
     }
 

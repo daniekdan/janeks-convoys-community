@@ -21,7 +21,7 @@ function GetOnlyDateOfConvoy() {
         if (docSnap.exists()) {
           setConvoyInfo(docSnap.data());
           let t = convertToDate(docSnap.data().date.seconds);
-          let mapka = t.getUTCFullYear() + '-' + (t.getUTCMonth()<10?'0':'') + t.getUTCMonth() + '-' + (t.getUTCDate()<10?'0':'') + t.getUTCDate() + 
+          let mapka = t.getUTCFullYear() + '-' + ((t.getUTCMonth()+1)<10?'0':'') + (t.getUTCMonth()+1) + '-' + (t.getUTCDate()<10?'0':'') + t.getUTCDate() + 
                 (t.getUTCHours()<10?'T0':'T') + t.getUTCHours() + ':' + (t.getUTCMinutes()<10?'0':'') + t.getUTCMinutes() + ':' + (t.getUTCSeconds()<10?'0':'') + t.getUTCSeconds();
           setEventTime(mapka);
         }

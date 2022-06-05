@@ -8,8 +8,8 @@ import { auth } from '../firebase-config';
     if(document.getElementById('dashboard') != null) document.getElementById('dashboard').style.display = 'none';
     if (user) {
       if(document.getElementById('dashboard') != null) document.getElementById('dashboard').style.display = 'block';
-    } else {
-      window.location = '/';
+    } else if (window.location == '/janeks-convoys-community/#dashboard') {
+      //window.location = '/janeks-convoys-community/';
     }
   });
 

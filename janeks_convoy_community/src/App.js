@@ -40,6 +40,29 @@ function App() {
         <Footer />
       </div>
     </Router>
+    /* Support for GH Pages */
+    /*<Router>
+    <div>
+      <Navbar />
+      <Switch>
+        <Route exact path="/janeks-convoys-community/join-us">
+          <MiniHeader />
+          <JoinUs />
+        </Route>
+        <Route exact path="/janeks-convoys-community/dashboard">
+          <Dashboard />
+        </Route>
+        <Route path="/">
+          <Header />
+          <About />
+          <Discord />
+          <Convoy />
+          <Team />
+        </Route>
+        </Switch>
+      <Footer />
+    </div>
+  </Router>*/
   );
 }
 

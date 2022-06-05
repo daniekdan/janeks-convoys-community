@@ -4,6 +4,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { HashLink } from 'react-router-hash-link';
 import { auth } from '../firebase-config';
+import { Redirect } from "react-router-dom";
 
 
 function Loguj() {
@@ -14,6 +15,7 @@ const handleSubmit = (event) => {
   event.preventDefault();
   signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
+    //this.setState({ redirect: "/janeks-convoys-community/dashboard" });
     window.location.replace('/dashboard');
   })
   .catch((error) => {
@@ -41,8 +43,11 @@ const handleSubmit = (event) => {
   )
 }
 export default class LoginForm extends Component {
-
+  state = { redirect: null };
   render() {
+    if (this.state.redirect != null) {
+      return <Redirect to={this.state.redirect} />
+    }
     return (
       <Loguj />
     )
